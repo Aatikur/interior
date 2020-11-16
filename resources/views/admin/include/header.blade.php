@@ -13,7 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="icon" href="images/favicon.png" type="image/ico" />
 
-    <title>Quickwell</title>
+    <title>Interior</title>
     {{-- <link rel="icon" href="{{ asset('logo/logo.png')}}" type="image/icon type"> --}}
 
 
@@ -57,7 +57,7 @@
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
               <a href="{{route('admin.deshboard')}}" class="site_title">
-                Quickwell
+                Interior
                 {{-- <img src="{{ asset('logo/logo.png')}}" height="50" style=" width: 90%;"> --}}
               </a>
             </div>
@@ -84,6 +84,17 @@
                 <h3>General</h3>
                 <ul class="nav side-menu">
                   <li><a href="{{ route('admin.deshboard')}}"><i class="fa fa-home"></i> Home </span></a></li>
+                
+                <li><a href="{{ route('admin.category_list') }}"><i class="	fa fa-wrench" aria-hidden="true"></i> Category </a>
+                </li>
+                 <li><a href="{{ route('admin.sub_category_list')}}"><i class="	fa fa-wrench" aria-hidden="true"></i> Sub Category</a>
+                </li>
+                <li><a href="{{ route('admin.slider_list') }}"><i class="fa fa-sliders" aria-hidden="true"></i> Slider </a>
+                </li>
+                <li><a href="{{ route('admin.gallery_list') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Gallery </a>
+                </li>
+                <li><a><i class="fa fa-phone" aria-hidden="true"></i> Contact </a>
+                </li>
                 </ul>
               </div>
 
