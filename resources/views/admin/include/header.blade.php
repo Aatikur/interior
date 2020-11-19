@@ -93,8 +93,15 @@
                 </li>
                 <li><a href="{{ route('admin.gallery_list') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Gallery </a>
                 </li>
-                <li><a><i class="fa fa-phone" aria-hidden="true"></i> Contact </a>
+                <li><a><i class="fa fa-cogs" aria-hidden="true"></i> Inquiry <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    {{-- <li class="sub_menu"><a href="{{route('admin.brand_add_form')}}">Add New Brand</a></li> --}}
+                    <li class="sub_menu"><a href="{{route('admin.contact_list')}}">Contact List</a></li>
+                   
+                  </ul>
                 </li>
+                  <li><a href="{{ route('admin.change_password_form') }}"><i class="fa fa-key" aria-hidden="true"></i> Change Password </a></li>
+                
                 </ul>
               </div>
 

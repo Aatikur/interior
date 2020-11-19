@@ -10,6 +10,8 @@ Route::group(['namespace' => 'Admin'],function(){
     Route::group(['middleware'=>'auth:admin','prefix'=>'admin'],function(){
         Route::get('/dashboard', 'DashboardController@dashboardView')->name('admin.deshboard'); 
         Route::post('logout', 'LoginController@logout')->name('admin.logout');
+        Route::get('/change/password/form', 'DashboardController@changePasswordForm')->name('admin.change_password_form');
+        Route::post('/change/password', 'DashboardController@changePassword')->name('admin.change_password');
         
         Route::group(['prefix'=>'category'],function(){
 
@@ -46,6 +48,10 @@ Route::group(['namespace' => 'Admin'],function(){
             Route::get('delete/{id}','SliderController@deleteSlider')->name('admin.delete_slider');
             Route::get('edit/form/{id}','SliderController@sliderEditForm')->name('admin.slider_edit_form');
             Route::put('update/{id}','SliderController@updateSlider')->name('admin.update_slider');
+        });
+        Route::group(['prefix'=>'inquiry'],function(){
+            Route::get('contact/list/form','InquiryController@contactList')->name('admin.contact_list');
+            Route::get('ajax/list','InquiryController@contactListAjax')->name('admin.contact_list_ajax');
         });
         
     });   
