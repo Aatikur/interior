@@ -38,7 +38,7 @@
     
                     {{-- <li data-transition="crossfade" data-slotamount="7" data-masterspeed="1500" data-delay="10000">
                         <!--  BACKGROUND IMAGE -->
-                        <img src="{{asset('web/img/slide-16.jpg')}}" alt="Slide 2">
+                        <img src="{{asset('web/img/slide-03.jpg')}}" alt="Slide 3">
                         <div class="tp-caption slide-content-2 text-center" data-x="center" data-y="center"
                         data-frames='[{"delay":1500,"speed":2000,"frame":"0"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
                         <h1> It's comfort first,

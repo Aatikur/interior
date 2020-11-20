@@ -86,7 +86,7 @@
       <div class="container clearfix">
         <h1 class="logo pull-left">
           <a href="{{route('web.index')}}">
-            <img alt="Logo" src="{{asset('web/img/logo-black.png')}}">
+            <img alt="Logo" src="{{asset('web/img/logo.png')}}">
           </a>
         </h1>
         <a class="menu-mobile__button">
@@ -129,7 +129,7 @@
       <div class="container clearfix">
         <h1 class="logo pull-left">
           <a href="{{route('web.index')}}">
-            <img alt="Logo" src="{{asset('web/img/logo-white.png')}}">
+            <img alt="Logo" src="{{asset('web/img/logo.png')}}">
           </a>
         </h1>
 
