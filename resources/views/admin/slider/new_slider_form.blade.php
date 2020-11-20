@@ -7,7 +7,7 @@
 <div class="right_col" role="main">
     <div class="row">
         <div class="col-md-2"></div>
-        <div class="col-md-8" style="margin-top:50px;">
+        <div class="col-md-8" style="margin-top:30px;">
             <div class="x_panel">
 
                 <div class="x_title">
@@ -29,21 +29,21 @@
                         
                             {{ Form::open(['method' => 'post','route'=>'admin.add_slider','enctype'=>'multipart/form-data']) }}
                             <div class="well" style="overflow: auto" >
+                                <div class="form-group">
+                                    {{ Form::label('image', 'Image')}} <span style="color:red;"> * </span> <small>(1349*500)</small>
+                                    <input type="file" class="form-control" name="images" >
+                                    @if($errors->has('image'))
+                                        <span class="invalid-feedback" role="alert" style="color:red">
+                                            <strong>{{ $errors->first('image') }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
                                 <div class="form-row mb-3">                                
                                     <label for="content">Slider Content<span><b style="color: red"> * </b></span></label>
                                     <textarea class="form-control" name="content" id="content"></textarea>
                                     @if($errors->has('content'))
                                         <span class="invalid-feedback" role="alert" style="color:red">
                                             <strong>{{ $errors->first('content') }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                                <div class="form-group">
-                                    {{ Form::label('image', 'Image')}} <span style="color:red;">
-                                    <input type="file" class="form-control" name="images" >
-                                    @if($errors->has('image'))
-                                        <span class="invalid-feedback" role="alert" style="color:red">
-                                            <strong>{{ $errors->first('image') }}</strong>
                                         </span>
                                     @enderror
                                 </div>

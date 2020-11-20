@@ -33,6 +33,7 @@ Route::get('/Contact', function () {
 // Route::get('/Portfolio', function () {
 //     return view('web.portfolio.portfolio');
 // })->name('web.portfolio.portfolio');
+
 Route::group(['namespace'=>'Web'],function(){
     Route::get('/Portfolio','WebController@gallery')->name('web.gallery');
     Route::get('/','WebController@index')->name('web.index');
@@ -42,3 +43,8 @@ Route::group(['namespace'=>'Web'],function(){
     Route::post('add/contact','WebController@addContact')->name('web.add_contact');
     Route::get('/res/{status}','WebController@response')->name('web.response');
 });
+
+//------- Room --------
+Route::get('/Room', function () {
+    return view('web.room.room');
+})->name('web.room.room');
