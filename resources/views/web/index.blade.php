@@ -201,7 +201,7 @@
                             <div class="row">
                                 <div class="col-md-12">                                    
                                     <div class="text-center">
-                                        <h4 class="price-calculated" >Your estimate price is <span id="cont" style="color: #ee3535">₹1599</span></h4>
+                                        <h4 class="price-calculated" id="calc" style="display:none">Your estimate price is <span id="cont" style="color: #ee3535">₹1599</span></h4>
                                     </div>
                                 </div>
                             </div>
@@ -549,7 +549,7 @@ $(document).ready(function(){
                            
                         } else {
                             console.log(data);
-                           
+                            $('#calc').show();
                             $("#cont").html('<span style="color: #ee3535">'+data+'</span>');
                                   
                         }
