@@ -7101,6 +7101,9 @@ input[type=number] {
     .slide-title-3>span {
         font-size: 30px;
     }
+    .our-team2__img {
+        margin: 0 5px;
+    }
 }
 
 @media (max-width: 375px) {
