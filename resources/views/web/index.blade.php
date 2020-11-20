@@ -292,7 +292,13 @@
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
               <div class="latest__item">
-                <img alt="Lastest Project 3" src="{{asset('web/img/latest-project-07.jpg')}}">
+                <img alt="Lastest Project 3" src="{{asset('web/img/latest-project-04.jpg')}}">
+                <a href="{{asset('web/img/latest-project-07.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
+                  <i class="zmdi zmdi-plus-circle-o"></i>
+                </a>
+              </div>
+              <div class="latest__item">
+                <img alt="Lastest Project 3" src="{{asset('web/img/latest-project-03.jpg')}}">
                 <a href="{{asset('web/img/latest-project-07.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
                   <i class="zmdi zmdi-plus-circle-o"></i>
                 </a>

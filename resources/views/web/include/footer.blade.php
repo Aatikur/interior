@@ -13,19 +13,29 @@
             </h1>
             <ul class="ul--inline ul--footer">
               <li>
-                <a href="service-list.html">Service</a>
+                <a href="{{route('web.gallery')}}">
+                  Portfolio
+                </a>
               </li>
               <li>
-                <a href="product.html">Product</a>
+                <a href="{{route('web.room.room')}}">
+                  Room
+                </a>
               </li>
               <li>
-                <a href="{{route('web.gallery')}}">Gallery</a>
+                <a href="{{route('web.about.about')}}">
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="blog-list.html">Blog</a>
+                <a href="{{route('web.contact.contact')}}">
+                  Our Catalogue
+                </a>
               </li>
               <li>
-                <a href="contact.html">Contact</a>
+                <a href="{{route('web.contact.contact')}}">
+                  Contact
+                </a>
               </li>
             </ul>
             <div class="social">
