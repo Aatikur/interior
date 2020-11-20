@@ -19,7 +19,7 @@
                 <a href="product.html">Product</a>
               </li>
               <li>
-                <a href="portfolio-detail-v1.html">Gallery</a>
+                <a href="{{route('web.gallery')}}">Gallery</a>
               </li>
               <li>
                 <a href="blog-list.html">Blog</a>

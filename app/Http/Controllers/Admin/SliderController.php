@@ -101,9 +101,9 @@ class SliderController extends Controller
             'content'=>'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+        $content = $request->input('content');
         $image_name = null;
-        if($request->hasfile('images'))
-        {
+        if($request->hasfile('images')){
             $prev_image = Slider::where('id',$id)->first();
 
             $path = base_path().'/public/images/slider/';
@@ -137,6 +137,14 @@ class SliderController extends Controller
             Slider::where('id',$id)
             ->update([
                 'image'=>$image_name,
+                'content'=>$content
+            ]);
+            return redirect()->back()->with('message','Slider Updated Successfully');
+        }else{
+            Slider::where('id',$id)
+            ->update([
+               
+                'content'=>$content
             ]);
             return redirect()->back()->with('message','Slider Updated Successfully');
         }

@@ -12,9 +12,12 @@
 */
 
 // ------- Index --------
-Route::get('/', function () {
-    return view('web.index');
-})->name('web.index');
+
+use Illuminate\Support\Facades\Route;
+
+// Route::get('/', function () {
+//     return view('web.index');
+// })->name('web.index');
 
 // ------- About --------
 Route::get('/About', function () {
@@ -27,6 +30,13 @@ Route::get('/Contact', function () {
 })->name('web.contact.contact');
 
 // ------- Portfolio --------
-Route::get('/Portfolio', function () {
-    return view('web.portfolio.portfolio');
-})->name('web.portfolio.portfolio');
+// Route::get('/Portfolio', function () {
+//     return view('web.portfolio.portfolio');
+// })->name('web.portfolio.portfolio');
+Route::group(['namespace'=>'Web'],function(){
+    Route::get('/Portfolio','WebController@gallery')->name('web.gallery');
+    Route::get('/','WebController@index')->name('web.index');
+    Route::get('/fetch/sub/category/{category_id}','WebController@fetchSubCat')->name('web.fetch_sub_cat');
+    Route::get('/get/image/{sub_cat_id}','WebController@getImage')->name('web.get_image');
+    Route::get('calculate/{sub_cat_id}/{length}/{breadth}','WebController@calculate')->name('web.calculate');
+});

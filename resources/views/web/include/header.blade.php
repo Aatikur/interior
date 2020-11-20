@@ -57,7 +57,7 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.portfolio.portfolio')}}">
+              <a href="{{route('web.gallery')}}">
                 Portfolio
               </a>
             </li>
@@ -100,7 +100,7 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.portfolio.portfolio')}}">
+              <a href="{{route('web.gallery')}}">
                 Portfolio
               </a>
             </li>
@@ -141,7 +141,7 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.portfolio.portfolio')}}">
+              <a href="{{route('web.gallery')}}">
                 Portfolio
               </a>
             </li>

@@ -28,7 +28,7 @@
                         <div class="well" style="overflow:auto">
                             <div class="form-row mb-3">                                
                                 <label for="content">Slider Content<span><b style="color: red"> * </b></span></label>
-                                <input class="form-control" value="{{ $slider->content }}" name="content" >
+                                <textarea class="form-control" name="content" id="content">{{ $slider->content }}</textarea>
                                 @if($errors->has('content'))
                                     <span class="invalid-feedback" role="alert" style="color:red">
                                         <strong>{{ $errors->first('content') }}</strong>
@@ -65,5 +65,11 @@
     <div class="clearfix"></div>
 </div>
  @endsection
-
- 
+ @section('script')
+ <script src="{{ asset('admin/ckeditor4/ckeditor.js')}}"></script>  
+ <script>
+ CKEDITOR.replace( 'content', {
+    height: 200,
+});
+</script>
+ @endsection

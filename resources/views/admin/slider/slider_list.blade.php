@@ -34,7 +34,7 @@
                                         <td>
                                         <img src="{{asset('images/slider/thumb/'.$item->image.'')}}" height="100" />
                                         </td>
-                                        <td>{{$item->content}}</td>
+                                        <td>{!!  $item->content!!}</td>
                                         <td>
                                             <a href="{{route('admin.delete_slider',['id'=>$item->id])}}" class="btn btn-danger">Delete</a>
                                             <a href="{{ route('admin.slider_edit_form',['id'=>$item->id]) }}" class="btn btn-sm btn-warning">Edit</a>

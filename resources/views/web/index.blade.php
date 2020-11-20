@@ -12,18 +12,20 @@
         <div class="rev_slider_wrapper">
             <div id="revolution-slider2" class="rev_slider" data-version="5.4.4" style="display: none;">
                 <ul>
+                    @foreach($slider as $data)
                     <li data-transition="crossfade" data-slotamount="7" data-masterspeed="2000" data-delay="10000">
                         <!--  BACKGROUND IMAGE -->
-                        <img src="{{asset('web/img/slide-04.jpg')}}" alt="Slide 1">
+                        <img src="{{asset('images/slider/'.$data->image)}}" alt="Slide 1">
                         <div class="tp-caption slide-content-2 text-center" data-x="center" data-y="center"
                             data-frames='[{"delay":1500,"speed":2000,"frame":"0"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h1> It's comfort first,
-                            comfort last,
-                            comfort always.</h1>
+                            <h1> {!! $data->content !!}</h1>
                         </div>
                     </li>
+                        
+                    @endforeach
+                    
         
-                    <li data-transition="scaledownfromtop" data-slotamount="7" data-masterspeed="1500" data-delay="10000">
+                    {{-- <li data-transition="scaledownfromtop" data-slotamount="7" data-masterspeed="1500" data-delay="10000">
                         <!--  BACKGROUND IMAGE -->
                         <img src="{{asset('web/img/slide-05.jpg')}}" alt="Slide 2">
                         <div class="tp-caption slide-content-2 text-center" data-x="center" data-y="center"
@@ -32,9 +34,9 @@
                             comfort last,
                             comfort always.</h1>
                         </div>
-                    </li>
+                    </li> --}}
     
-                    <li data-transition="crossfade" data-slotamount="7" data-masterspeed="1500" data-delay="10000">
+                    {{-- <li data-transition="crossfade" data-slotamount="7" data-masterspeed="1500" data-delay="10000">
                         <!--  BACKGROUND IMAGE -->
                         <img src="{{asset('web/img/slide-16.jpg')}}" alt="Slide 2">
                         <div class="tp-caption slide-content-2 text-center" data-x="center" data-y="center"
@@ -43,7 +45,7 @@
                             comfort last,
                             comfort always.</h1>
                         </div>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>
@@ -196,7 +198,7 @@
                             <div class="row">
                                 <div class="col-md-12">                                    
                                     <div class="text-center">
-                                        <h4 class="price-calculated">Your estimate price is <span style="color: #ee3535">₹1599</span></h4>
+                                        <h4 class="price-calculated" >Your estimate price is <span id="cont" style="color: #ee3535">₹1599</span></h4>
                                     </div>
                                 </div>
                             </div>
@@ -206,11 +208,13 @@
                                         <label>
                                             Catagory<span>*</span>
                                         </label>
-                                        <select class="au-form-control">
-                                            <option value="" selected disibled>Select Catagory</option>
-                                            <option value="vn">Catagory1</option>
-                                            <option value="usa">Catagory2</option>
-                                            <option value="uk">Catagory3</option>
+                                        <select id="category" name="category" class="au-form-control">
+                                            <option value="" selected disabled>Select Catagory</option>
+                                            @foreach($category as  $value)
+                                                <option value="{{ $value->id }}">{{$value->name }}</option>
+                                            @endforeach
+                                           
+                                           
                                         </select>
                                     </div>
                                 </div>
@@ -219,11 +223,9 @@
                                         <label>
                                             Material<span>*</span>
                                         </label>
-                                            <select class="au-form-control" id="material">
-                                            <option value="" selected disibled>Select Material</option>
-                                            <option data-url="{{asset('web/img/cart-item-01.jpg')}}" value="vn">Sub-catagory1</option>
-                                            <option  data-url="{{asset('web/img/cart-item-03.jpg')}}" value="usa">Sub-catagory2</option>
-                                            <option data-url="{{asset('web/img/cart-item-02.jpg')}}" value="uk">Sub-catagory3</option>
+                                            <select name="sub_category" id="sub_category" class="au-form-control">
+                                            <option value="" disabled>Select Material</option>
+                                            
                                         </select>
                                     </div>
                                 </div>
@@ -232,24 +234,24 @@
                                 <div class="col-md-6">
                                     <div class="au-input-group">
                                         <label>Length</label>
-                                        <input type="text" name="company" class="au-form-control" placeholder="Company Name">
+                                        <input type="text" id="length" class="au-form-control" placeholder="Company Name">
                                         <span class="end-type">inch</span>
                                     </div>
                                     <div class="au-input-group">
                                         <label>Breath</label>
-                                        <input type="text" name="company" class="au-form-control" placeholder="Company Name">
+                                        <input type="text" id="breadth" class="au-form-control" placeholder="Company Name">
                                         <span class="end-type">inch</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="au-input-group text-center">
+                                    <div class="au-input-group text-center" id="sub_img">
                                         <img src="{{asset('web/img/calculator-preview.png')}}" id="material-preview" class="preview text-center">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                    <a href="#" class="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white m-t-20">Calculate Price</a>
+                                    <a  id="calculate" class="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white m-t-20">Calculate Price</a>
                                 </div>
                             </div>
                         </form>
@@ -447,13 +449,104 @@
 
 @section('script')
 <script>
-    $(function () {
-        $("#material").on('change', function () {
-            var selection = $(this).find('option:selected');
-            //no problem accessing the attributes here:
-            var data = selection.data('url');
-            $("#material-preview").attr('src',data);
+//     $(function () {
+//         $("#material").on('change', function () {
+//             var selection = $(this).find('option:selected');
+//             //no problem accessing the attributes here:
+//             var data = selection.data('url');
+//             $("#material-preview").attr('src',data);
+//         });
+//  });
+
+$(document).ready(function(){
+            $("#category").change(function(){
+                var category_id = $(this).val();
+                
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    type:"GET",
+                    url:"{{ url('/fetch/sub/category')}}"+"/"+category_id,
+                    success:function(data){
+                        if ($.isEmptyObject(data)) {
+                            $("#sub_category").html("<option value=''>No Sub Category Found</option>");
+                        } else {
+                            $("#sub_category").html("<option value=''>Please Select First Category</option>");
+                            $.each( data, function( key, value ) {
+                                $("#sub_category").append("<option value='"+value.id+"'>"+value.name+"</option>");
+                            });                          
+                        }
+                        
+
+                    }
+                });
+            });
         });
- });
+
+
+$(document).ready(function(){
+            $("#sub_category").change(function(){
+                var sub_cat_id = $(this).val();
+                
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    type:"GET",
+                    url:"{{ url('/get/image')}}"+"/"+sub_cat_id,
+                    success:function(data){
+                        console.log(data);
+                        if ($.isEmptyObject(data)) {
+                           
+                        } else {
+                            console.log(data);
+                           
+                            $("#sub_img").html(data);
+                                  
+                        }
+                        
+
+                    }
+                });
+            });
+        });
+$(document).ready(function(){
+            $("#calculate").click(function(){
+                var sub_cat_id = $('#sub_category').val();
+                var length = $('#length').val();
+                var breadth = $('#breadth').val();
+                
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    type:"GET",
+                    url:"{{ url('/calculate/')}}"+"/"+sub_cat_id+"/"+length+"/"+breadth,
+                    success:function(data){
+                        console.log(data);
+                        if ($.isEmptyObject(data)) {
+                           
+                        } else {
+                            console.log(data);
+                           
+                            $("#cont").html('<span style="color: #ee3535">'+data+'</span>');
+                                  
+                        }
+                        
+
+                    }
+                });
+            });
+        });
 </script>
 @endsection

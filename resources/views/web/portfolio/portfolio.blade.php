@@ -32,47 +32,16 @@
       <section class="latest-project latest-project-4 p-tb-30">
         <div class="container">
           <div class="row no-gutters">
-            <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-              <div class="latest__item">
-                <img alt="Lastest Project 1" src="{{asset('web/img/latest-project-01.jpg')}}">
-                <a href="{{asset('web/img/latest-project-01.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-                </a>
+            @foreach($gallery as $value)
+              <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="latest__item">
+                  <img alt="Lastest Project 1" src="{{asset('images/gallery/'.$value->image)}}">
+                  <a href="{{asset('images/gallery/'.$value->image)}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
+                    <i class="zmdi zmdi-plus-circle-o"></i>
+                  </a>
+                </div>                  
               </div>
-              <div class="latest__item">
-                <img alt="Lastest Project 2" src="{{asset('web/img/latest-project-02.jpg')}}">
-                <a href="{{asset('web/img/latest-project-02.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-  
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-              <div class="latest__item">
-                <img alt="Lastest Project 3" src="{{asset('web/img/latest-project-07.jpg')}}">
-                <a href="{{asset('web/img/latest-project-07.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-              <div class="latest__item">
-                <img alt="Lastest Project 5" src="{{asset('web/img/latest-project-05.jpg')}}">
-                <a href="{{asset('web/img/latest-project-05.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-  
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-  
-                </a>
-              </div>
-              <div class="latest__item">
-                <img alt="Lastest Project 6" src="{{asset('web/img/latest-project-06.jpg')}}">
-                <a href="{{asset('web/img/latest-project-06.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-  
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-  
-                </a>
-              </div>
-            </div>
+            @endforeach
           </div>
         </div>
       </section>
