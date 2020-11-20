@@ -6,7 +6,8 @@
   <div class="row">
     <div class="x_panel">
       <div class="x_title">
-        <h3>Gallery Images</h3>
+        <h3 style="display:inline">Gallery Images</h3>
+        <a href="{{ route('admin.add_image_form') }}" class="btn btn-success" style="float: right">Add Images</a>
         <div class="clearfix"></div>
           <div>
              @if (Session::has('message'))
@@ -17,19 +18,18 @@
              @endif
           </div>
           <div style="text-align:right;">
-            <a href="{{ route('admin.add_image_form') }}" class="btn btn-success">Add Images</a>
           </div>
       </div>
       <div class="x_content">
        @foreach($gallery as $item)
         <div class="col-md-4">
-          <div class="thumbnail" style="height: 300px; width: 300px;" >
-            <div class="image view view-first" style="height: 300px; width: 300px;">
-              <img style="width: 100%; display: block;" src="{{asset('images/gallery/thumb/'.$item->image.'')}}" />
+          <div class="thumbnail" style="height: 200px; width: 300px;overflow:hidden" >
+            <div class="image view view-first" style="margin-bottom: 10px;">
+              <img style="width: auto; display: block;height: 200px;" src="{{asset('images/gallery/thumb/'.$item->image.'')}}" />
             </div>
            
           </div>
-          <div>
+          <div style="margin-bottom: 20px;text-align:center">
             <h4 style="text-align:center;color:red">{{  ucfirst($item->caption)}}</h4>
             <a href="{{ route('admin.image_edit_form',['id'=>$item->id]) }}"  class="btn btn-success">Edit</a>
             <a href="{{ route('admin.delete_image',['id'=>$item->id]) }}"  class="btn btn-danger">Delete</a>

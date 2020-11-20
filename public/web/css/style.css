@@ -23,6 +23,7 @@ body {
     line-height: -webkit-calc(22/13);
     line-height: -moz-calc(22/13);
     line-height: calc(22/13);
+    overflow-x: hidden;
 }
 
 .swal-button {
@@ -670,7 +671,8 @@ a.au-btn--dark:hover {
 }
 
 a.au-btn--white {
-    color: #fff;
+    color: #fff!important;
+    cursor: pointer;
 }
 
 .tp-caption.au-btn--pill.au-btn.au-btn--slide {
@@ -2190,10 +2192,11 @@ a.pro-link:hover {
 }
 
 .our-process__item {
-    padding: 45px 30px;
+    padding: 25px;
     position: relative;
     margin-top: 25px;
     border-radius: 15px;
+    height: 194px;
 }
 
 .our-process__item>h3 {
@@ -3162,7 +3165,7 @@ a.sbold {
 /*We are*/
 
 .we-are {
-    padding: 120px 0;
+    padding: 60px 0 0;
 }
 
 .we-are__right>h2 {
@@ -4967,7 +4970,7 @@ body.box {
 /*Our Process Page*/
 
 .process-page {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .process-page .pro__img {
@@ -4995,6 +4998,7 @@ body.box {
 
 .process-page .pro__text>h2 {
     margin-bottom: 30px;
+    font-size: 19px;
 }
 
 .process-page .pro__text>p {
@@ -5002,9 +5006,10 @@ body.box {
 }
 
 .process-page .pro__text>h2>span {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     color: #ebcd1e;
+    padding-right: 5px;
 }
 
 .process-item {
@@ -5433,8 +5438,13 @@ body.box {
 /*Contact*/
 
 .parallax--nav-2 {
+    padding: 215px 0 0;
+    background-image: url('../img/page_banner_01.jpg');
+}
+
+.parallax--nav-3 {
     padding: 185px 0 0;
-    background-image: url('../img/bg-head-05.jpg');
+    background-image: url('../img/page_banner_about.jpg');
 }
 
 .contact-content {

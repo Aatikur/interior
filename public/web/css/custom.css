@@ -65,6 +65,8 @@
 }
 .owl-carousel .owl-item .our-team2__img img {
     border-radius: 100%;
+    height: 94px;
+    width: auto;
 }
 .price-calculated {
     display: inline-block;

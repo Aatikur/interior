@@ -62,7 +62,12 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.contact.contact')}}">
+              <a href="{{route('web.room.room')}}">
+                Room
+              </a>
+            </li>
+            <li>
+              <a href="{{route('web.about.about')}}">
                 About Us
               </a>
             </li>
@@ -105,7 +110,12 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.contact.contact')}}">
+              <a href="{{route('web.room.room')}}">
+                Room
+              </a>
+            </li>
+            <li>
+              <a href="{{route('web.about.about')}}">
                 About Us
               </a>
             </li>
@@ -146,7 +156,12 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.contact.contact')}}">
+              <a href="{{route('web.room.room')}}">
+                Room
+              </a>
+            </li>
+            <li>
+              <a href="{{route('web.about.about')}}">
                 About Us
               </a>
             </li>

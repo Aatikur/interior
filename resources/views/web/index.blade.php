@@ -57,7 +57,7 @@
             <div class="owl-carousel owl-theme" id="owl-our-team-2">
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-01.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room1.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-02.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room2.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -77,7 +77,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-03.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room3.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-04.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room4.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-05.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room5.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-06.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room6.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-01.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room1.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-02.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room2.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -137,7 +137,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-03.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room7.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/gallery-06.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room10.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
@@ -168,10 +168,10 @@
                     <div class="service-2__right">
                         <div class="service-2__inner-head wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
                             <h3>
-                                Interiorlife is your best solution
+                               About InteriorLife 
                             </h3>
                             <p>
-                                Interiorlife is an interior designing firmwhich helps you to bring creative and stylishdesigns for your  humble abode. We with our teams of consultants,  designers, wholesale distributors, supervisors,  workers and labour,  provides you an one stop solution in making your dream house a reality. 
+                                InteriorLife provides customize services that helps you to bring creative and stylish designs for your humble abode with all the modern facilities within best and affordable price.
                             </p>
                         </div>
                         <div class="service-2__inner-body wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
@@ -184,10 +184,13 @@
                                         <a href="service-list.html">residential interior</a>
                                     </h5>
                                     <p>
-                                        Our team of interior designers provide clients with designs from home interior to customize furniture. They work to provide beautiful designs considering the needs and budget of the clients.  Thus,  aiming at maximum and beautifully utilization of the space and also to provide peace and comfort to the their home. 
+                                        InteriorLife specialize in home interior to customize furniture. We aim to provide the best according to your requirement with our team of professionals. 
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="text-center">
+                        <a href="{{route('web.about.about')}}" class="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white m-t-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Red More</a>
                         </div>
                     </div>
                 </div>
@@ -319,7 +322,7 @@
       <!-- End Lastest Project -->
       <!-- Our process -->
       <section class="our-process">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 col-12">
                         <h2 class="title">
@@ -335,36 +338,36 @@
                         <div class="our-process__item our-process__item--l-b wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                             <h3>
                                 <i class="zmdi zmdi-accounts-alt"></i>
-                                meet
+                                Seal The Deal
                             </h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuntium.</p>
+                            <p>After finalizing with selection of design, material to be used and price of the service, a 50% advance payment is made which seals the order.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="our-process__item our-process__item--l-t wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                             <h3>
-                            <i class="zmdi zmdi-library"></i>
-                            discussion
+                                <i class="zmdi zmdi-library"></i>
+                                Hafeway there
                             </h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuntium.</p>
+                            <p>A part that is 30% of the payment is required to pay after completion of 50% of the work.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="our-process__item our-process__item--l-b wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
                             <h3>
-                            <i class="zmdi zmdi-puzzle-piece"></i>
-                            ideal
+                                <i class="zmdi zmdi-puzzle-piece"></i>
+                                Finishing Touch
                             </h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuntium.</p>
+                            <p>Remaining 20% payment after completing the work, after that the order would no longer be active</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="our-process__item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
                             <h3>
-                            <i class="zmdi zmdi-city-alt"></i>
-                            construct
+                                <i class="zmdi zmdi-city-alt"></i>
+                                construct
                             </h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuntium.</p>
+                            <p>Free Maintenance service for the warranty term.</p>
                         </div>
                     </div>
                 </div>
@@ -385,13 +388,9 @@
                     <div class="testi__speech">
                       <blockquote>
                         <i class="fa fa-quote-left big-qoute"></i>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Interiorlife is one of its kind which provides customize services with its team of professionals within a reasonable price range. We, together with Interiorlife , will provide you best in your requirement.
                       </blockquote>
-                      <h6>tim holand</h6>
-                      <p class="testi-job">
-                        <em>Developer</em>
-                      </p>
+                      <h6>Look India</h6>
                     </div>
                   </div>
                   <!-- end item -->
@@ -399,13 +398,19 @@
                     <div class="testi__speech">
                       <blockquote>
                         <i class="fa fa-quote-left big-qoute"></i>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Let us help you in fulfilling your dream of living in a comfortable and beautiful home space. Here, I am Experienced in Office Management and Experienced Supervisor for Interior Designs to help you live your dream in affordable price.
                       </blockquote>
-                      <h6>tim holand</h6>
-                      <p class="testi-job">
-                        <em>Developer</em>
-                      </p>
+                      <h6>Upasana Choudhury</h6>
+                    </div>
+                  </div>
+                  <!-- end item -->
+                  <div class="testi__item item clearfix">
+                    <div class="testi__speech">
+                      <blockquote>
+                        <i class="fa fa-quote-left big-qoute"></i>
+                        Marketing Executive for Interior Designs and also diploma in Interior Designing, here, to help you live in a peaceful and comfortable environment within a very reasonable price.
+                      </blockquote>
+                      <h6>Bandana Sharma</h6>
                     </div>
                   </div>
                   <!-- end item -->
