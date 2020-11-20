@@ -60,7 +60,7 @@
                         </div>
                        
                         <div class="form-group">
-                            {{ Form::label('price', 'Price')}} <span style="color:red;">
+                            {{ Form::label('price', 'Price')}} <strong style="color:red;">Per Inch</strong>
                             <input type="number" class="form-control" name="price">
                             @if($errors->has('price'))
                                 <span class="invalid-feedback" role="alert" style="color:red">

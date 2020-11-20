@@ -20,13 +20,7 @@ class InquiryController extends Controller
                 } else {
                     return null;
                 }
-            })->addColumn('amount', function ($row) {
-                if (isset($row->amount)) {
-                    return $row->amount;
-                } else {
-                    return null;
-                }
-            })->addColumn('email', function ($row) {
+           })->addColumn('email', function ($row) {
                 if (isset($row->email)) {
                     return $row->email;
                 } else {
@@ -38,7 +32,7 @@ class InquiryController extends Controller
                 } else {
                     return null;
                 }
-            })->rawColumns(['name', 'amount', 'email','message'])
+            })->rawColumns(['name', 'email','message'])
             ->make(true);
     }
 }

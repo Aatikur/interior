@@ -39,4 +39,6 @@ Route::group(['namespace'=>'Web'],function(){
     Route::get('/fetch/sub/category/{category_id}','WebController@fetchSubCat')->name('web.fetch_sub_cat');
     Route::get('/get/image/{sub_cat_id}','WebController@getImage')->name('web.get_image');
     Route::get('calculate/{sub_cat_id}/{length}/{breadth}','WebController@calculate')->name('web.calculate');
+    Route::post('add/contact','WebController@addContact')->name('web.add_contact');
+    Route::get('/res/{status}','WebController@response')->name('web.response');
 });

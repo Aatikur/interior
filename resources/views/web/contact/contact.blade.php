@@ -40,8 +40,9 @@
                 <div class="col-md-6">
                     <div class="form-contact-wrap m-t-40">
                         <h4>Send us a message</h4>
-                        <form class="form-contact js-contact-form" action="https://freebw.com/templates/arch/includes/contact-form.php" method="POST" role="form" name="contact">
-                        <div class="row">
+                        <form class="form-contact js-contact-form" action="{{ route('web.add_contact') }}" method="POST" role="form" name="contact">
+                        @csrf
+                            <div class="row">
                             <div class="col-md-6 col-12">
                             <input type="text" name="name" required placeholder="Your Name*">
                             </div>

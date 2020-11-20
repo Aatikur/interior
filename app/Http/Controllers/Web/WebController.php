@@ -8,6 +8,7 @@ use App\Models\Gallery;
 use App\Models\Category;
 use App\Models\SubCategory;
 use App\Models\Slider;
+use App\Models\Contact;
 class WebController extends Controller
 {
     public function gallery(){
@@ -44,4 +45,32 @@ class WebController extends Controller
         return $total_amount;
     }
 
+    public function addContact(Request $request){
+        $this->validate($request, [
+            'name'=>'required',
+            'email' =>'required',
+            
+        ]);
+        $message = $request->input('message');
+        $contact = new Contact();
+        $contact->name = $request->input('name');
+        $contact->email = $request->input('email');
+        if(isset($message) && !empty($$message) )
+        {
+            $contact->message = $request->input('message');
+        }
+        $contact->save();
+        if($contact->save()){
+            return redirect()->route('web.response',['status'=>1]);
+        }else{
+            return redirect()->route('web.response',['status'=>2]);
+        }
+
+    }
+
+    public function response($status){
+        return view('web.contact.response',compact('status'));
+        
+
+    }
 }

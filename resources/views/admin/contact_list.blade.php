@@ -18,7 +18,7 @@
                             <tr>
                               <th>Sl</th>
                               <th>Name</th>
-                              <th>Amount</th>
+                             
                               <th>Email</th>
                               <th>Message</th>
                             </tr>
@@ -48,9 +48,7 @@
             ajax: "{{ route('admin.contact_list_ajax') }}",
             columns: [
                 {data: 'DT_RowIndex', name: 'DT_RowIndex'},
-              
                 {data: 'name', name: 'name',searchable: true},
-                {data: 'amount', name: 'amount' ,searchable: true},
                 {data: 'email', name: 'email' ,searchable: true},  
                 {data: 'message', name: 'message' ,searchable: true},  
                                  

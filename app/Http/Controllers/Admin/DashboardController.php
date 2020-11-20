@@ -5,13 +5,21 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Admin;
+use App\Models\Category;
+use App\Models\SubCategory;
+use App\Models\Gallery;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Hash;
 
 class DashboardController extends Controller
 {
     public function dashboardView()
     {
-        return view('admin.dashboard');
+        $cat_count = Category::count();
+        $sub_cat_count = SubCategory::count();
+        $image_count = Gallery::count();
+        $total_cnt = Contact::count();
+        return view('admin.dashboard',compact('cat_count','sub_cat_count','image_count','total_cnt'));
     }
 
     public function changePasswordForm()
