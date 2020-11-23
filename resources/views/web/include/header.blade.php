@@ -44,6 +44,10 @@
     <!-- Header Stick -->
     <header class="header-stick header-stick--dark">
       <div class="container clearfix">
+          @php
+                    
+                    $doc = $header_data['doc'];
+            @endphp
         <h1 class="logo pull-left">
           <a href="{{route('web.index')}}">
             <img alt="Logo" src="{{asset('web/img/logo-white.png')}}">
@@ -123,12 +127,12 @@
               </a>
             </li>
             <li>
-              @if(isset($doc) && !empty($doc))
+            @if(isset($doc) && !empty($doc))
                     <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
-               
+           
                 Our Catalogue
               </a>
-               @endif
+             @endif
             </li>
             <li>
               <a href="{{route('web.contact.contact')}}">
@@ -172,12 +176,12 @@
               </a>
             </li>
             <li>
-              @if(isset($doc) && !empty($doc))
+                 @if(isset($doc) && !empty($doc))
                     <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
-               
+                
                 Our Catalogue
               </a>
-               @endif
+              @endif
             </li>
             <li>
               <a href="{{route('web.contact.contact')}}">
