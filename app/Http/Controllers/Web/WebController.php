@@ -21,9 +21,9 @@ class WebController extends Controller
     public function index(){
         $category = Category::where('status',1)->where('status',1)->get();
         $slider = Slider::get();
-        $doc = Document::where('status',1)->first();
         
-        return view('web.index',compact('category','slider','doc'));
+        
+        return view('web.index',compact('category','slider'));
     }
 
     public function fetchSubCat($category_id){

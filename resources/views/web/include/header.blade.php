@@ -72,9 +72,12 @@
               </a>
             </li>
             <li>
-              <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
+              @if(isset($doc) && !empty($doc))
+                    <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
+               
                 Our Catalogue
               </a>
+               @endif
             </li>
             <li>
               <a href="{{route('web.contact.contact')}}">
@@ -120,9 +123,12 @@
               </a>
             </li>
             <li>
-              <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
+              @if(isset($doc) && !empty($doc))
+                    <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
+               
                 Our Catalogue
               </a>
+               @endif
             </li>
             <li>
               <a href="{{route('web.contact.contact')}}">
@@ -166,9 +172,12 @@
               </a>
             </li>
             <li>
-              <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
+              @if(isset($doc) && !empty($doc))
+                    <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
+               
                 Our Catalogue
               </a>
+               @endif
             </li>
             <li>
               <a href="{{route('web.contact.contact')}}">
