@@ -49,6 +49,14 @@ Route::group(['namespace' => 'Admin'],function(){
             Route::get('edit/form/{id}','SliderController@sliderEditForm')->name('admin.slider_edit_form');
             Route::put('update/{id}','SliderController@updateSlider')->name('admin.update_slider');
         });
+
+        Route::group(['prefix'=>'docs'],function(){
+            Route::get('list','DocsController@docsList')->name('admin.docs_list');
+            Route::get('add/form','DocsController@addDocForm')->name('admin.docs_add_form');
+            Route::post('add','DocsController@addDoc')->name('admin.add_doc');
+            Route::get('delete/{id}','DocsController@deleteDoc')->name('admin.delete_doc');
+            Route::get('status/{id}/{status}','DocsController@status')->name('admin.status');
+        });
         Route::group(['prefix'=>'inquiry'],function(){
             Route::get('contact/list/form','InquiryController@contactList')->name('admin.contact_list');
             Route::get('ajax/list','InquiryController@contactListAjax')->name('admin.contact_list_ajax');

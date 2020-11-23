@@ -72,7 +72,7 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.contact.contact')}}">
+              <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
                 Our Catalogue
               </a>
             </li>
@@ -120,7 +120,7 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.contact.contact')}}">
+              <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
                 Our Catalogue
               </a>
             </li>
@@ -166,7 +166,7 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.contact.contact')}}">
+              <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
                 Our Catalogue
               </a>
             </li>

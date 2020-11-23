@@ -8,6 +8,7 @@ use App\Models\Gallery;
 use App\Models\Category;
 use App\Models\SubCategory;
 use App\Models\Slider;
+use App\Models\Document;
 use App\Models\Contact;
 class WebController extends Controller
 {
@@ -20,7 +21,9 @@ class WebController extends Controller
     public function index(){
         $category = Category::where('status',1)->where('status',1)->get();
         $slider = Slider::get();
-        return view('web.index',compact('category','slider'));
+        $doc = Document::where('status',1)->first();
+        
+        return view('web.index',compact('category','slider','doc'));
     }
 
     public function fetchSubCat($category_id){

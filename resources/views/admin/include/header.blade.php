@@ -93,6 +93,8 @@
                 </li>
                 <li><a href="{{ route('admin.gallery_list') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Gallery </a>
                 </li>
+                <li><a href="{{ route('admin.docs_list') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i> Documents </a>
+                </li>
                 <li><a><i class="fa fa-cogs" aria-hidden="true"></i> Inquiry <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     {{-- <li class="sub_menu"><a href="{{route('admin.brand_add_form')}}">Add New Brand</a></li> --}}
