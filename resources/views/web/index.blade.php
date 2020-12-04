@@ -161,7 +161,7 @@
     <!-- End Our Team 2 -->
 
     <!-- Service 2 -->
-    <section class="service-2">
+    <section class="service-2 pt-xs-0">
         <div class="container clearfix">
             <div class="row service-2-wrap clearfix">
                 <div class="col-md-6">

@@ -1668,6 +1668,7 @@ nav.menu-mobile>ul>li>ul {
 .service-2__right {
     z-index: 10;
     float: left;
+    padding-top: 30px;
 }
 
 .service-2__img {
@@ -3402,7 +3403,7 @@ h2.title--small {
 }
 
 .our-team2 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 
@@ -6593,7 +6594,9 @@ input[type=number] {
     .service-2__right {
         width: 100%;
         position: static;
-        margin-top: 30px;
+        margin-top: 0px;
+        padding-top: 0;
+        padding-bottom: 20px;
     }
 
     .service-3__item {
@@ -7124,6 +7127,9 @@ input[type=number] {
     .our-team2__img {
         margin: 0 5px;
     }
+    .service-2.pt-xs-0 {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 375px) {
@@ -7147,5 +7153,10 @@ input[type=number] {
 @media (max-height: 550px) {
     #menu-canvas {
         display: none;
+    }
+}
+@media (min-width: 991px) {
+    .we-are__right {
+        padding-top: 40px;
     }
 }

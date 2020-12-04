@@ -60,8 +60,7 @@
 .our-team2__img {
     border-radius: 90px;
     overflow: hidden;
-    border: 2px dashed #d83d3d;
-    padding: 3px;
+    padding: 3px 5px;
 }
 .owl-carousel .owl-item .our-team2__img img {
     border-radius: 100%;

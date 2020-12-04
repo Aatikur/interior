@@ -110,6 +110,58 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-list__item">
+              <img alt="Service 4" src="{{asset('web/img/room/room10.jpg')}}">
+              <div class="service-list__text">
+                <h5>
+                  <a>WALL SELVES </a>
+                </h5>
+                <p>
+                  Stylish and unique design Wall Selves for your living room, bedroom etc. These beautiful looking wall selves are very light and easy to install. It provides a modern touch to your home. You can check out more designs in the catalogue section. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-list__item">
+              <img alt="Service 5" src="{{asset('web/img/room/room8.jpg')}}">
+              <div class="service-list__text">
+                <h5>
+                  <a>SPAVE SAVING FURNITURE</a>
+                </h5>
+                <p>                  
+                  Modern problems required modern solution , so here with the problem of space constrain we bring you space saving furniture according to your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-list__item">
+              <img alt="Service 6" src="{{asset('web/img/room/room9.jpg')}}">
+              <div class="service-list__text">
+                <h5>
+                  <a>FALSE CEILING</a>
+                </h5>
+                <p>
+                  Beautiful and stunning designs for your interior. Reflecting lights of beautifully carved false ceiling give a whole new level to modern interior.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-list__item">
+              <img alt="Service 6" src="{{asset('web/img/room/room7.jpg')}}">
+              <div class="service-list__text">
+                <h5>
+                  <a>CLADDING</a>
+                </h5>
+                <p>
+                  Cladding the interior is next after the wave of wallpapers. Cladding has more standard and stylish look even in interior. Cladding on the focus wall gives a whole new look to your room.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
