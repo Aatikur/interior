@@ -29,10 +29,10 @@ Route::get('/Contact', function () {
     return view('web.contact.contact');
 })->name('web.contact.contact');
 
-// ------- Portfolio --------
-// Route::get('/Portfolio', function () {
-//     return view('web.portfolio.portfolio');
-// })->name('web.portfolio.portfolio');
+// ------- Service --------
+Route::get('/Service', function () {
+    return view('web.service.service');
+})->name('web.service.service');
 
 Route::group(['namespace'=>'Web'],function(){
     Route::get('/Portfolio','WebController@gallery')->name('web.gallery');
@@ -42,9 +42,7 @@ Route::group(['namespace'=>'Web'],function(){
     Route::get('calculate/{sub_cat_id}/{length}/{breadth}','WebController@calculate')->name('web.calculate');
     Route::post('add/contact','WebController@addContact')->name('web.add_contact');
     Route::get('/res/{status}','WebController@response')->name('web.response');
+    Route::get('/Catalog', 'CatalogController@index')->name('web.catalog.catalog');
 });
 
-//------- Room --------
-Route::get('/Room', function () {
-    return view('web.room.room');
-})->name('web.room.room');
+//------- Catalog --------

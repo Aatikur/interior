@@ -1,9 +1,9 @@
 .header-desktop .logo img {
-    width: 70%;
+    width: 50%;
     float: left;
 }
 .header-stick .logo img{
-    width: 62%;
+    width: 35%;
     float: left;
 }
 .our-process .col-lg-3:nth-child(1) .our-process__item {
@@ -13,16 +13,13 @@
     background: #ffbf27;
 }
 .our-process .col-lg-3:nth-child(3) .our-process__item {
-    background: #e2c5ab;
+    background: #bda794;
 }
 .our-process .col-lg-3:nth-child(4) .our-process__item {
     background: #8db600;
 }
 .parallax--footer img.footer-logo  {
     width: 45%;
-}
-.service-2 {
-    padding: 50px 0;
 }
 .slide2 .rev_slider_wrapper .tp-caption h1{
     font-family: 'Courgette', cursive;
@@ -65,7 +62,8 @@
 .owl-carousel .owl-item .our-team2__img img {
     border-radius: 100%;
     height: 94px;
-    width: auto;
+    width: 94px;
+    margin: auto;
 }
 .price-calculated {
     display: inline-block;
@@ -89,3 +87,60 @@
 }
 .header2{
     background-image: linear-gradient(180deg,#ffffff7d 1.1%, #ffffff00);
+}
+.our-team2__detail p {
+    width: 300px;
+    display: none;
+} 
+.contact-info i {
+    font-size: 25px;
+    color: #ee3535;
+    border: 2px solid #ee3535;
+    padding: 13px 10px;
+    display: inline-block;
+    width: 18%;
+    margin: 0 auto 10px;
+}
+.contact-item {
+    display: grid;
+    text-align: center;
+}
+.testi-partner .title-3 {
+    margin-bottom: 50px;
+}
+.our-team2 .owl-stage {
+    margin: auto;
+}
+@media(min-width:746px){
+    
+    .our-team2 {
+        position: absolute;
+        width: 100%;
+    }
+    .our-team2__item:hover .our-team2__detail {
+        box-shadow: 0 0 #eee;
+    } 
+    .our-team2__item:hover .our-team2__detail p {
+        display: block;
+        border: 1px solid #eb3535;
+        margin-top: 10px;
+        background: #fff;
+        padding: 5px;
+        border-radius: 10px;
+    } 
+    .our-team2__detail p .fa {
+        position: absolute;
+        transform: rotate(29deg)translate(34px, -36px);
+        color: #eb3535;
+        font-size: 14px;
+    }  
+    .service-2 {
+        padding: 190px 0 50px
+    }
+    .our-team2__item.last p {
+        margin-left: -162px;
+    }
+    .our-team2__item.last .our-team2__detail p .fa {
+        transform: rotate(29deg)translate(176px, -115px);
+    }
+}

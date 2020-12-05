@@ -50,7 +50,7 @@
             @endphp
         <h1 class="logo pull-left">
           <a href="{{route('web.index')}}">
-            <img alt="Logo" src="{{asset('web/img/logo-white.png')}}">
+            <img alt="Logo" src="{{asset('web/img/logo.png')}}">
           </a>
         </h1>
         <nav class="menu-desktop pull-right">
@@ -66,8 +66,8 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.room.room')}}">
-                Room
+              <a href="{{route('web.service.service')}}">
+                Service
               </a>
             </li>
             <li>
@@ -76,12 +76,9 @@
               </a>
             </li>
             <li>
-              @if(isset($doc) && !empty($doc))
-                    <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
-               
+              <a href="{{route('web.catalog.catalog')}}">
                 Our Catalogue
               </a>
-               @endif
             </li>
             <li>
               <a href="{{route('web.contact.contact')}}">
@@ -117,8 +114,8 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.room.room')}}">
-                Room
+              <a href="{{route('web.service.service')}}">
+                Service
               </a>
             </li>
             <li>
@@ -127,12 +124,9 @@
               </a>
             </li>
             <li>
-            @if(isset($doc) && !empty($doc))
-                    <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
-           
+              <a href="{{route('web.catalog.catalog')}}">
                 Our Catalogue
               </a>
-             @endif
             </li>
             <li>
               <a href="{{route('web.contact.contact')}}">
@@ -166,8 +160,8 @@
               </a>
             </li>
             <li>
-              <a href="{{route('web.room.room')}}">
-                Room
+              <a href="{{route('web.service.service')}}">
+                Service
               </a>
             </li>
             <li>
@@ -176,12 +170,9 @@
               </a>
             </li>
             <li>
-                 @if(isset($doc) && !empty($doc))
-                    <a href="{{asset('uploads/'.$doc->file).''}}" target="_blank">
-                
+              <a href="{{route('web.catalog.catalog')}}">
                 Our Catalogue
               </a>
-              @endif
             </li>
             <li>
               <a href="{{route('web.contact.contact')}}">

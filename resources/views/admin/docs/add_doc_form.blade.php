@@ -10,12 +10,9 @@
             <div class="x_panel">
 
                 <div class="x_title">
-                  
-                        <h2>Add New Document</h2>
-                    
-                    <div class="clearfix"></div>
+                    <h2>Add New Document</h2>
+                <div class="clearfix"></div>
                 </div>
-
                  <div>
                     @if (Session::has('message'))
                         <div class="alert alert-success">{{ Session::get('message') }}</div>
@@ -26,10 +23,7 @@
 
                 <div>
                     <div class="x_content">
-                       
-                            {{ Form::open(['method' => 'post','route'=>'admin.add_doc','enctype'=>'multipart/form-data']) }}
-                        
-
+                        {{ Form::open(['method' => 'post','route'=>'admin.add_doc','enctype'=>'multipart/form-data']) }}
                         <div class="form-group">
                             {{ Form::label('name', 'Category Name')}}
                             {{ Form::text('name',null,array('class' => 'form-control','placeholder'=>'Enter  name')) }}
@@ -40,8 +34,17 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            {{ Form::label('File', 'File')}}
-                            {{ Form::file('file',null,array('class' => 'form-control')) }}
+                            <label for="Image">Image <small>(370*221)</small></label>
+                            <input type="file" name="image" class="form-control">
+                            @if($errors->has('image'))
+                                <span class="invalid-feedback" role="alert" style="color:red">
+                                    <strong>{{ $errors->first('image') }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="File">File <small>(less than 1MB)</small></label>
+                            <input type="file" name="file" class="form-control">
                             @if($errors->has('file'))
                                 <span class="invalid-feedback" role="alert" style="color:red">
                                     <strong>{{ $errors->first('file') }}</strong>

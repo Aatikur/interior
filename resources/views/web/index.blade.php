@@ -23,29 +23,6 @@
                     </li>
                         
                     @endforeach
-                    
-        
-                    {{-- <li data-transition="scaledownfromtop" data-slotamount="7" data-masterspeed="1500" data-delay="10000">
-                        <!--  BACKGROUND IMAGE -->
-                        <img src="{{asset('web/img/slide-05.jpg')}}" alt="Slide 2">
-                        <div class="tp-caption slide-content-2 text-center" data-x="center" data-y="center"
-                        data-frames='[{"delay":1500,"speed":2000,"frame":"0"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <h1> It's comfort first,
-                            comfort last,
-                            comfort always.</h1>
-                        </div>
-                    </li> --}}
-    
-                    {{-- <li data-transition="crossfade" data-slotamount="7" data-masterspeed="1500" data-delay="10000">
-                        <!--  BACKGROUND IMAGE -->
-                        <img src="{{asset('web/img/slide-03.jpg')}}" alt="Slide 3">
-                        <div class="tp-caption slide-content-2 text-center" data-x="center" data-y="center"
-                        data-frames='[{"delay":1500,"speed":2000,"frame":"0"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                        <h1> It's comfort first,
-                            comfort last,
-                            comfort always.</h1>
-                        </div>
-                    </li> --}}
                 </ul>
             </div>
         </div>
@@ -63,6 +40,9 @@
                         <h4>
                             TEMPLE
                         </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Temple or Mandir is the home of God in your home. Provide a beautiful and well lit temple for the God to keep the festive mood and faith going on.
+                        </p>
                     </div>
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
@@ -73,6 +53,9 @@
                         <h4>
                             LIVING ROOM
                         </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Make your Living Room a place of comfort, be it for family members or guests with stylish and modern interior be the talk of the town.
+                        </p>
                     </div>
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
@@ -83,6 +66,9 @@
                         <h4>
                             BEDROOM
                         </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Bedroom a place of resting and intimacy, here we can provide your the ultimate confort you always seek that will take all your tiredness away.
+                        </p>
                     </div>
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
@@ -93,6 +79,9 @@
                         <h4>
                             KIDS ROOM
                         </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Accident proof and colourful interior for the growing minds. With intelligent interiors the curious brain will always find something fun to do. 
+                        </p>
                     </div>
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
@@ -103,6 +92,9 @@
                         <h4>
                             STUDY ROOM
                         </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Let the serious room talk for itself, with sound proof interior you can find the comfort to cuddle in the chair with your favourite book or concentrate for hours in your work.
+                        </p>
                     </div>
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
@@ -113,29 +105,25 @@
                         <h4>
                             KITCHEN
                         </h4>
-                    </div>
-                </div>
-                <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s">
-                    <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/room/room1.jpg')}}" class="img-responsive">
-                    </div>
-                    <div class="our-team2__detail">
-                        <h4>
-                            FURNITURE
-                        </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Delicious food makes a kitchen messy, but not anymore. Not only your kitchen will be spotless but it will look as good as new with our modular kitchen laminates. It will also provide colour to your kitchen to keep your mood in makind delicious foods.
+                        </p>
                     </div>
                 </div>
                 <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
                     <div class="our-team2__img">
-                        <img alt="Our Team 1" src="{{asset('web/img/room/room2.jpg')}}" class="img-responsive">
+                        <img alt="Our Team 1" src="{{asset('web/img/room/room9.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
                             FALSE CEILING
                         </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Modern problems required modern solution , so here with the problem of space constrain we bring you space saving furniture according to your needs.
+                        </p>
                     </div>
                 </div>
-                <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">
+                <div class="our-team2__item item last  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">
                     <div class="our-team2__img">
                         <img alt="Our Team 1" src="{{asset('web/img/room/room7.jpg')}}" class="img-responsive">
                     </div>
@@ -143,16 +131,22 @@
                         <h4>
                             CLADDING
                         </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Beautiful and stunning designs for your interior. Reflecting lights of beautifully carved false ceiling give a whole new level to modern interior.
+                        </p>
                     </div>
                 </div>
-                <div class="our-team2__item item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+                <div class="our-team2__item item last  wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
                     <div class="our-team2__img">
                         <img alt="Our Team 1" src="{{asset('web/img/room/room10.jpg')}}" class="img-responsive">
                     </div>
                     <div class="our-team2__detail">
                         <h4>
-                            WALL SELVES
+                            WALL SELVES 
                         </h4>
+                        <p><i class="fa fa-play" aria-hidden="true"></i>
+                            Cladding the interior is next after the wave of wallpapers. Cladding has more standard and stylish look even in interior. Cladding on the focus wall gives a whole new look to your room.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -190,7 +184,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                        <a href="{{route('web.about.about')}}" class="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white m-t-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Red More</a>
+                        <a href="{{route('web.about.about')}}" class="au-btn au-btn--big au-btn--pill au-btn--yellow au-btn--white m-t-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -238,12 +232,12 @@
                                     <div class="au-input-group">
                                         <label>Length</label>
                                         <input type="text" id="length" class="au-form-control" placeholder="Company Name">
-                                        <span class="end-type">inch</span>
+                                        <span class="end-type">sq ft</span>
                                     </div>
                                     <div class="au-input-group">
                                         <label>Breath</label>
                                         <input type="text" id="breadth" class="au-form-control" placeholder="Company Name">
-                                        <span class="end-type">inch</span>
+                                        <span class="end-type">sq ft</span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -263,198 +257,177 @@
             </div>
         </div>
     </section>
-      <!-- End Service 2 -->
-      <!-- Lastest Project -->
-      <section class="latest-project latest-project-4">
+    <!-- End Service 2 -->
+    <!-- Lastest Project -->
+    <section class="latest-project latest-project-4">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="title title-3">
-                Service
-              </h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title title-3">
+                    Service
+                    </h2>
+                </div>
             </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-              <div class="latest__item">
-                <img alt="Lastest Project 1" src="{{asset('web/img/latest-project-01.jpg')}}">
-                <a href="{{asset('web/img/latest-project-01.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-                </a>
-              </div>
-              <div class="latest__item">
-                <img alt="Lastest Project 2" src="{{asset('web/img/latest-project-02.jpg')}}">
-                <a href="{{asset('web/img/latest-project-02.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-  
-                </a>
-              </div>
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-md-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="latest__item">
+                        <img alt="Lastest Project 1" src="{{asset('web/img/latest-project-01.jpg')}}">
+                        <a href="{{asset('web/img/latest-project-01.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
+                            <i class="zmdi zmdi-plus-circle-o"></i>
+                        </a>
+                    </div>
+                    <div class="latest__item">
+                    <img alt="Lastest Project 2" src="{{asset('web/img/latest-project-02.jpg')}}">
+                    <a href="{{asset('web/img/latest-project-02.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
+                        <i class="zmdi zmdi-plus-circle-o"></i>
+
+                    </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="latest__item">
+                        <img alt="Lastest Project 3" src="{{asset('web/img/latest-project-04.jpg')}}">
+                        <a href="{{asset('web/img/latest-project-07.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
+                            <i class="zmdi zmdi-plus-circle-o"></i>
+                        </a>
+                        </div>
+                        <div class="latest__item">
+                        <img alt="Lastest Project 3" src="{{asset('web/img/latest-project-03.jpg')}}">
+                        <a href="{{asset('web/img/latest-project-07.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
+                            <i class="zmdi zmdi-plus-circle-o"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="latest__item">
+                        <img alt="Lastest Project 5" src="{{asset('web/img/latest-project-05.jpg')}}">
+                        <a href="{{asset('web/img/latest-project-05.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
+
+                            <i class="zmdi zmdi-plus-circle-o"></i>
+
+                        </a>
+                    </div>
+                    <div class="latest__item">
+                        <img alt="Lastest Project 6" src="{{asset('web/img/latest-project-06.jpg')}}">
+                        <a href="{{asset('web/img/latest-project-06.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
+
+                            <i class="zmdi zmdi-plus-circle-o"></i>
+
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-              <div class="latest__item">
-                <img alt="Lastest Project 3" src="{{asset('web/img/latest-project-04.jpg')}}">
-                <a href="{{asset('web/img/latest-project-07.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-                </a>
-              </div>
-              <div class="latest__item">
-                <img alt="Lastest Project 3" src="{{asset('web/img/latest-project-03.jpg')}}">
-                <a href="{{asset('web/img/latest-project-07.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-              <div class="latest__item">
-                <img alt="Lastest Project 5" src="{{asset('web/img/latest-project-05.jpg')}}">
-                <a href="{{asset('web/img/latest-project-05.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-  
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-  
-                </a>
-              </div>
-              <div class="latest__item">
-                <img alt="Lastest Project 6" src="{{asset('web/img/latest-project-06.jpg')}}">
-                <a href="{{asset('web/img/latest-project-06.jpg')}}" data-lightbox="Lastest Project" class="overlay overlay--yellow overlay--invisible overlay--p-15">
-  
-                  <i class="zmdi zmdi-plus-circle-o"></i>
-  
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- End Lastest Project -->
-      <!-- Our process -->
-      <section class="our-process">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <h2 class="title">
-                            our
-                            <span>
-                            process
-                            </span>
-                        </h2>
+    </section>
+    <!-- End Lastest Project -->
+    <!-- Our process -->
+    <section class="our-process">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h2 class="title">
+                        our
+                        <span>
+                        process
+                        </span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-process__item our-process__item--l-b wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <h3>
+                            <i class="zmdi zmdi-accounts-alt"></i>
+                            Seal The Deal
+                        </h3>
+                        <p>After finalizing with selection of design, material to be used and price of the service, a 50% advance payment is made which seals the order.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-process__item our-process__item--l-b wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                            <h3>
-                                <i class="zmdi zmdi-accounts-alt"></i>
-                                Seal The Deal
-                            </h3>
-                            <p>After finalizing with selection of design, material to be used and price of the service, a 50% advance payment is made which seals the order.</p>
-                        </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-process__item our-process__item--l-t wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                        <h3>
+                            <i class="zmdi zmdi-library"></i>
+                            Hafeway there
+                        </h3>
+                        <p>A part that is 30% of the payment is required to pay after completion of 50% of the work.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-process__item our-process__item--l-t wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                            <h3>
-                                <i class="zmdi zmdi-library"></i>
-                                Hafeway there
-                            </h3>
-                            <p>A part that is 30% of the payment is required to pay after completion of 50% of the work.</p>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-process__item our-process__item--l-b wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
+                        <h3>
+                            <i class="zmdi zmdi-puzzle-piece"></i>
+                            Finishing Touch
+                        </h3>
+                        <p>Remaining 20% payment after completing the work, after that the order would no longer be active</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-process__item our-process__item--l-b wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s">
-                            <h3>
-                                <i class="zmdi zmdi-puzzle-piece"></i>
-                                Finishing Touch
-                            </h3>
-                            <p>Remaining 20% payment after completing the work, after that the order would no longer be active</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="our-process__item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
-                            <h3>
-                                <i class="zmdi zmdi-city-alt"></i>
-                                construct
-                            </h3>
-                            <p>Free Maintenance service for the warranty term.</p>
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-process__item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                        <h3>
+                            <i class="zmdi zmdi-city-alt"></i>
+                            construct
+                        </h3>
+                        <p>Free Maintenance service for the warranty term.</p>
                     </div>
                 </div>
             </div>
-      </section>
-      <!-- End our process -->
-      <!-- Testi-Partner -->
-      <section class="testi-partner">
+        </div>
+    </section>
+    <!-- End our process -->
+    <!-- Testi-Partner -->
+    <section class="testi-partner">
         <div class="container">
-          <div class="row">
+            <div class="row">
             <div class="col-lg-6 col-md-12 col-12">
-              <div class="testi-partner__left wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
-                <h2 class="title title-3 title-3--left">
-                  testimonial
-                </h2>
-                <div class="testi-slide-wrap owl-carousel owl-theme" id="owl-testi-1">
-                  <div class="testi__item item clearfix">
-                    <div class="testi__speech">
-                      <blockquote>
-                        <i class="fa fa-quote-left big-qoute"></i>
-                        Interiorlife is one of its kind which provides customize services with its team of professionals within a reasonable price range. We, together with Interiorlife , will provide you best in your requirement.
-                      </blockquote>
-                      <h6>Look India</h6>
+                <div class="testi-partner__left wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h2 class="title title-3 title-3--left">
+                        message from Look India
+                    </h2>
+                    <div class="testi-slide-wrap owl-carousel owl-theme" id="owl-testi-1">
+                        <div class="testi__item item clearfix">
+                            <div class="testi__speech">
+                                <blockquote>
+                                <i class="fa fa-quote-left big-qoute"></i>
+                                Interiorlife is one of its kind which provides customize services with its team of professionals within a reasonable price range. We, together with Interiorlife , will provide you best in your requirement.
+                                </blockquote>
+                                <h6>Look India</h6>
+                            </div>
+                        </div>
+                        <!-- end item -->
                     </div>
-                  </div>
-                  <!-- end item -->
-                  <div class="testi__item item clearfix">
-                    <div class="testi__speech">
-                      <blockquote>
-                        <i class="fa fa-quote-left big-qoute"></i>
-                        Let us help you in fulfilling your dream of living in a comfortable and beautiful home space. Here, I am Experienced in Office Management and Experienced Supervisor for Interior Designs to help you live your dream in affordable price.
-                      </blockquote>
-                      <h6>Upasana Choudhury</h6>
-                    </div>
-                  </div>
-                  <!-- end item -->
-                  <div class="testi__item item clearfix">
-                    <div class="testi__speech">
-                      <blockquote>
-                        <i class="fa fa-quote-left big-qoute"></i>
-                        Marketing Executive for Interior Designs and also diploma in Interior Designing, here, to help you live in a peaceful and comfortable environment within a very reasonable price.
-                      </blockquote>
-                      <h6>Bandana Sharma</h6>
-                    </div>
-                  </div>
-                  <!-- end item -->
                 </div>
-              </div>
             </div>
             <div class="col-lg-6 col-md-12 col-12">
-              <div class="testi-partner__right wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
-                <h2 class="title title-3 title-3--right">
-                  our partners
-                </h2>
-                <div class="partner-wrap1 owl-carousel owl-theme" id="owl-partner-1">
-                  <a href="#" class="partner__item item">
-                    <img alt="Partner 1" src="{{asset('web/img/partner-05.png')}}">
-                  </a>
-                  <a href="#" class="partner__item item">
-                    <img alt="Partner 2" src="{{asset('web/img/partner-06.png')}}">
-                  </a>
-                  <a href="#" class="partner__item item">
-                    <img alt="Partner 3" src="{{asset('web/img/partner-07.png')}}">
-                  </a>
-                  <a href="#" class="partner__item item">
-                    <img alt="Partner 4" src="{{asset('web/img/partner-08.png')}}">
-                  </a>
-                  <a href="#" class="partner__item item">
-                    <img alt="Partner 5" src="{{asset('web/img/partner-06.png')}}">
-                  </a>
-                  <a href="#" class="partner__item item">
-                    <img alt="Partner 6" src="{{asset('web/img/partner-07.png')}}">
-                  </a>
-  
+                <div class="testi-partner__right wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+                    <h2 class="title title-3 title-3--right">
+                        our partners
+                    </h2>
+                    <div class="partner-wrap1 owl-carousel owl-theme" id="owl-partner-1">
+                        <a class="partner__item item">
+                            <img alt="Partner 1" src="{{asset('web/img/partner-05.png')}}">
+                        </a>
+                        <a class="partner__item item">
+                            <img alt="Partner 2" src="{{asset('web/img/partner-06.png')}}">
+                        </a>
+                        <a class="partner__item item">
+                            <img alt="Partner 3" src="{{asset('web/img/partner-07.png')}}">
+                        </a>
+                        <a class="partner__item item">
+                            <img alt="Partner 4" src="{{asset('web/img/partner-08.png')}}">
+                        </a>
+                        <a class="partner__item item">
+                            <img alt="Partner 5" src="{{asset('web/img/partner-06.png')}}">
+                        </a>
+                        <a class="partner__item item">
+                            <img alt="Partner 6" src="{{asset('web/img/partner-07.png')}}">
+                        </a>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            </div>
         </div>
-      </section>
-      <!-- End Testi-Partner -->
+    </section>
+    <!-- End Testi-Partner -->
 
 @endsection
 
@@ -467,9 +440,9 @@
 //             var data = selection.data('url');
 //             $("#material-preview").attr('src',data);
 //         });
-//  });
+    //  });
 
-$(document).ready(function(){
+        $(document).ready(function(){
             $("#category").change(function(){
                 var category_id = $(this).val();
                 

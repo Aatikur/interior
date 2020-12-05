@@ -19,6 +19,7 @@
                             <tr>
                               <th>Sl</th>
                               <th>Name</th>
+                              <th class="text-center">Image</th>
                               <th>File</th>
                               <th>Status</th>
                               <th>Action</th>
@@ -33,12 +34,13 @@
                                     <tr>
                                       <td>{{$count++}}</td>
                                       <td>{{$item->name}}</td>
+                                      <td class="text-center"><img src="{{asset('images/docs/'.$item->image)}}" alt="image" style="max-width: 150px"></td>
                                       <td><a href="{{asset('uploads/'.$item->file).''}}" target="_blank">{{ $item->file }}</a></td> 
                                       <td>
                                         @if ($item->status == '1')
-                                          <a  class="btn btn-sm btn-primary" aria-disabled="true">Enabled</a>
+                                          <a style="background: #219e21;color: #fff;padding: 2px 10px;border-radius: 10px;" aria-disabled="true">Enabled</a>
                                         @else
-                                          <a  class="btn btn-sm btn-danger" aria-disabled="true">Disabled</a>
+                                          <a style="background: #da2722;color: #fff;padding: 2px 10px;border-radius: 10px;" aria-disabled="true">Disabled</a>
                                         @endif
                                       </td>
                                       <td>

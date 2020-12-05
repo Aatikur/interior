@@ -7,8 +7,8 @@
         <div class="row justify-content-center">
           <div class="col-lg-7 col-md-9 col-12">
             <h1>
-              <a href="index-2.html">
-                <img class="footer-logo" alt="Logo" src="{{asset('web/img/logo-white.png')}}">
+              <a href="{{route('web.index')}}">
+                <img class="footer-logo" alt="Logo" src="{{asset('web/img/logo.png')}}">
               </a>
             </h1>
             <ul class="ul--inline ul--footer">
@@ -18,8 +18,8 @@
                 </a>
               </li>
               <li>
-                <a href="{{route('web.room.room')}}">
-                  Room
+                <a href="{{route('web.service.service')}}">
+                  Service
                 </a>
               </li>
               <li>
@@ -28,7 +28,7 @@
                 </a>
               </li>
               <li>
-                <a href="{{route('web.contact.contact')}}">
+                <a href="{{route('web.catalog.catalog')}}">
                   Our Catalogue
                 </a>
               </li>

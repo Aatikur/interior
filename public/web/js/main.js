@@ -431,7 +431,6 @@
       margin: 30,
       responsiveClass: true,
       smartSpeed: 1000,
-      dragable: false,
       responsive: {
         0: {
           items: 3,
@@ -452,16 +451,18 @@
           margin: 20
         },
         1024: {
-          items: 8,
-          nav: false,
-          dots: true,
-          margin: 20
+          items: 9,
+          loop: false,
+          margin: 20,
+          touchDrag: false,
+          mouseDrag: false
         },
         1200: {
-          items: 10,
-          nav: false,
-          dots: true,
-          loop: true
+          items: 9,
+          margin: 10,
+          loop: false,
+          touchDrag: false,
+          mouseDrag: false
         }
       }
     });
@@ -472,13 +473,15 @@
   try {
     /* Testi 1 */
     $('#owl-testi-1').owlCarousel({
-      loop: true,
+      loop: false,
       margin: 2,
-      autoplay: true,
+      autoplay: false,
       autoplayTimeout: 6000,
       autoplayHoverPause: false,
       smartSpeed: 2000,
-      items: 1
+      items: 1,
+      touchDrag: false,
+      mouseDrag: false
     });
   } catch (error) {
 

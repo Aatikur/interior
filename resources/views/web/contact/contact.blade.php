@@ -44,19 +44,19 @@
                         <form class="form-contact js-contact-form" action="{{ route('web.add_contact') }}" method="POST" role="form" name="contact">
                         @csrf
                             <div class="row">
-                            <div class="col-md-6 col-12">
-                            <input type="text" name="name" required placeholder="Your Name*">
+                                <div class="col-md-6 col-12">
+                                    <input type="text" name="name" required placeholder="Your Name*">
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <input type="email" name="email" placeholder="Your Email*" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" id="message" class="message" placeholder="Your Message" value=""></textarea>
+                                </div>
                             </div>
-                            <div class="col-md-6 col-12">
-                            <input type="email" name="email" placeholder="Your Email*" required>
+                            <div>
+                                <button type="submit" class="au-btn au-btn--pill au-btn--yellow au-btn--big">Contact Us</button>
                             </div>
-                            <div class="col-md-12">
-                            <textarea name="message" id="message" class="message" placeholder="Your Message" value=""></textarea>
-                            </div>
-                        </div>
-                        <div>
-                            <button type="submit" class="au-btn au-btn--pill au-btn--yellow au-btn--big">Contact Us</button>
-                        </div>
                         </form>
                     </div>
                 </div>
@@ -68,26 +68,26 @@
     <section class="contact-info">
         <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6">
-            <h4 class="p-t-30">Contact info</h4>
+            <div class="col-lg-12 col-md-6">
+                <h4 class="p-t-30 text-center">Contact info</h4>
             </div>
-            <div class="col-lg-3 col-md-6">
-            <div class="p-t-30">
-                <i class="fa fa-home m-r-8"></i>
-                134 Collin St , Nottingham , UK
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-item p-t-30">
+                    <i class="fa fa-phone m-r-8"></i>
+                    <a href="tel:8638195069">8638195069</a><a href="tel:8638465137">8638465137</a>
+                </div>
             </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-item p-t-30">
+                    <i class="fa fa-home m-r-8"></i>
+                    3rd Floor, HN No.- 37 (from Hatigaon side), Lane No.-2, Basisthapur, Beltola, Guwahati, Assam 781028
+                </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-            <div class="p-t-30">
-                <i class="fa fa-phone m-r-8"></i>
-                (+24) 1344 205 699
-            </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-            <div class="p-t-30">
-                <i class="fa fa-envelope m-r-8"></i>
-                <a href="https://freebw.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ddef2f3e9fcfee9dceffef5ddfaf0fcf4f1b3fef2f0">[email&#160;protected]</a>
-            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-item p-t-30">
+                    <i class="fa fa-envelope m-r-8"></i>
+                    <a href="mailto:info@interiorlife.co.in">info@interiorlife.co.in</a>
+                </div>
             </div>
         </div>
         </div>
