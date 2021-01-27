@@ -23,6 +23,7 @@
   <link rel="stylesheet" type="text/css" href="{{asset('web/vendor/revolution/layers.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('web/vendor/lightbox2/src/css/lightbox.css')}}">
   <!-- Main CSS -->
+  @yield('seo')
   <link rel="stylesheet" type="text/css" href="{{asset('web/css/font.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('web/css/style.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('web/css/custom.css')}}">
@@ -50,7 +51,8 @@
             @endphp
         <h1 class="logo pull-left">
           <a href="{{route('web.index')}}">
-            <img alt="Logo" src="{{asset('web/img/logo.png')}}">
+            <h5 class="text-left">Powered By Look India</h5>
+            <img alt="Logo" src="{{asset('web/img/logo-white.png')}}">
           </a>
         </h1>
         <nav class="menu-desktop pull-right">
@@ -95,6 +97,7 @@
       <div class="container clearfix">
         <h1 class="logo pull-left">
           <a href="{{route('web.index')}}">
+            <h5 class="text-left">Powered By Look India</h5>
             <img alt="Logo" src="{{asset('web/img/logo.png')}}">
           </a>
         </h1>
@@ -143,6 +146,7 @@
       <div class="container clearfix">
         <h1 class="logo pull-left">
           <a href="{{route('web.index')}}">
+            <h5 class="text-left">Powered By Look India</h5>
             <img alt="Logo" src="{{asset('web/img/logo.png')}}">
           </a>
         </h1>

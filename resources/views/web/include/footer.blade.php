@@ -8,7 +8,8 @@
           <div class="col-lg-7 col-md-9 col-12">
             <h1>
               <a href="{{route('web.index')}}">
-                <img class="footer-logo" alt="Logo" src="{{asset('web/img/logo.png')}}">
+                <h5 style="color:#fff; margin-left:-40px;font-family: 'Courgette', cursive;text-transform: none;">Powered By Look India</h5>
+                <img class="footer-logo" alt="Logo" src="{{asset('web/img/logo-white.png')}}">
               </a>
             </h1>
             <ul class="ul--inline ul--footer">

@@ -1,7 +1,7 @@
 @extends('web.templete.master')
 
 @section('seo')
-<meta name="description" content="InteriorLife">
+<meta name="description" content="InteriorLife | About">
 @endsection
 
 @section('content')
@@ -58,7 +58,7 @@
                         <h2>InteriorLife</h2>
                         <h2 class="title--small" style="color: #ee3535;">A Complete Home Solution</h2>
                         <p class="m-b-10">
-                          InteriorLife is an interior designing firmwhich helps you to bring creative and stylishdesigns for your  humble abode. We with our teams of consultants,  designers, wholesale distributors, supervisors,  workers and labour,  provides you an one stop solution in making your dream house a reality. We not only help you in maximum utilization of  your space but also beautification of your home with customize, stylish and new designed furniturewith a large options of laminates that will enhance the beauty of your home.  Because love is where home is and here we are to help you make your dream home a reality with all the modern facilities within best and affordable price. 
+                          InteriorLife is an interior designing firm which helps you to bring creative and stylish designs for your  humble abode. We with our teams of consultants,  designers, wholesale distributors, supervisors,  workers and labour,  provides you an one stop solution in making your dream house a reality. We not only help you in maximum utilization of  your space but also beautification of your home with customize, stylish and new designed furniturewith a large options of laminates that will enhance the beauty of your home.  Because love is where home is and here we are to help you make your dream home a reality with all the modern facilities within best and affordable price. 
                         </p>
                     </div>
                 </div>

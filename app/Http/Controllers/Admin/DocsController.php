@@ -22,7 +22,7 @@ class DocsController extends Controller
     public function addDoc(Request $request){
         $this->validate($request, [
             'name'   => 'required',
-            'file'=> 'required|mimes:doc,pdf,docx',
+            'file'=> 'required|mimes:doc,pdf,docx|max:10240',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 

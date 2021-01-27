@@ -5,6 +5,19 @@
 .header-stick .logo img{
     width: 35%;
     float: left;
+    color: #fff;
+}
+.logo h5{
+    position: absolute;
+    left: 30px;
+    font-size: 15px;
+    top: 4px;
+    font-family: 'Courgette', cursive;
+    text-transform: none;
+}
+.header-stick .logo h5 {
+    color: #fff;
+    font-size: 11px;
 }
 .our-process .col-lg-3:nth-child(1) .our-process__item {
     background: #c8a2c8;
@@ -19,7 +32,7 @@
     background: #8db600;
 }
 .parallax--footer img.footer-logo  {
-    width: 45%;
+    width: 30%;
 }
 .slide2 .rev_slider_wrapper .tp-caption h1{
     font-family: 'Courgette', cursive;

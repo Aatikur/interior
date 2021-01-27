@@ -7132,6 +7132,16 @@ input[type=number] {
     }
     .logo {
         width: 50%;
+        margin-top: 6px;
+    }
+    .header-mobile .logo img {
+        width: 50%;
+    }
+    .header-mobile .logo h5 {
+        font-size: 10px;
+    }
+    .header-mobile .logo h5 {
+        left: 10px;
     }
 }
 

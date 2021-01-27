@@ -1,7 +1,7 @@
 @extends('web.templete.master')
 
 @section('seo')
-<meta name="description" content="InteriorLife">
+    <meta name="description" content="InteriorLife | home">
 @endsection
 
 @section('content')
@@ -433,14 +433,14 @@
 
 @section('script')
 <script>
-//     $(function () {
-//         $("#material").on('change', function () {
-//             var selection = $(this).find('option:selected');
-//             //no problem accessing the attributes here:
-//             var data = selection.data('url');
-//             $("#material-preview").attr('src',data);
-//         });
-    //  });
+    //     $(function () {
+    //         $("#material").on('change', function () {
+    //             var selection = $(this).find('option:selected');
+    //             //no problem accessing the attributes here:
+    //             var data = selection.data('url');
+    //             $("#material-preview").attr('src',data);
+    //         });
+        //  });
 
         $(document).ready(function(){
             $("#category").change(function(){

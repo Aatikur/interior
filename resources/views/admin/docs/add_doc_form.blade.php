@@ -43,7 +43,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="File">File <small>(less than 1MB)</small></label>
+                            <label for="File">File <small>(less than 10MB)</small></label>
                             <input type="file" name="file" class="form-control">
                             @if($errors->has('file'))
                                 <span class="invalid-feedback" role="alert" style="color:red">
@@ -52,7 +52,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            {{ Form::submit('Submit', array('class'=>'btn btn-success')) }}
+                            <button type="submit" class="btn btn-success" id="chkc" onclick="check()">Submit</button>
                             <a href="{{route('admin.docs_list')}}" class="btn btn-warning">Back</a>
 
                         </div>
@@ -69,4 +69,11 @@
 </div>
 
 
+ @endsection
+ @section('script')
+<script>
+ function check(){
+     $('#chkc').html('<i class="fa fa-spinner fa-spin"></i>');
+ }
+</script> 
  @endsection
